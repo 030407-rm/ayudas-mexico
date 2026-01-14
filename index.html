@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="tWUY_84enTWnRSeuz2_W7BCEfifDi4VGxH3F13kBnAE" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directorio Maestro de Ayudas México 2026 | 60+ Programas</title>
+    <title>Directorio Maestro de Ayudas México 2026 | 60+ Programas y Guías</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .search-focus:focus { box-shadow: 0 0 15px rgba(59, 130, 246, 0.5); }
@@ -16,11 +16,11 @@
         <header class="text-center mb-16">
             <span class="text-blue-500 font-bold tracking-widest uppercase text-sm">Mega Guía Actualizada 2026</span>
             <h1 class="text-5xl font-extrabold text-white mt-2 mb-4">Directorio de Apoyos México</h1>
-            <p class="text-slate-400 text-lg max-w-3xl mx-auto">La base de datos más completa de fondos perdidos, créditos estatales, becas de tecnología y apoyos a la mujer en los 32 estados.</p>
+            <p class="text-slate-400 text-lg max-w-3xl mx-auto">La base de datos más completa de fondos perdidos, créditos estatales y becas tecnológicas.</p>
         </header>
 
         <div class="max-w-2xl mx-auto mb-12">
-            <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Busca por estado, industria o tipo de apoyo (ej: Jalisco, Software, Mujer)..." 
+            <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Busca por estado o tipo de apoyo (ej: Jalisco, Mujer, Beca)..." 
             class="w-full p-5 rounded-2xl bg-slate-900 border border-slate-800 focus:border-blue-500 focus:outline-none text-white search-focus transition-all duration-300">
         </div>
 
@@ -29,37 +29,100 @@
                 <table class="w-full text-left border-collapse" id="aidTable">
                     <thead>
                         <tr class="border-b border-slate-800 bg-slate-800/80">
-                            <th class="p-5 text-blue-400 font-bold">Programa / Apoyo</th>
-                            <th class="p-5 text-blue-400 font-bold">Institución / Estado</th>
+                            <th class="p-5 text-blue-400 font-bold">Programa</th>
+                            <th class="p-5 text-blue-400 font-bold">Institución</th>
                             <th class="p-5 text-blue-400 font-bold">Monto / Tipo</th>
                             <th class="p-5 text-blue-400 font-bold">Acción</th>
                         </tr>
                     </thead>
                     <tbody id="tableBody" class="divide-y divide-slate-800">
-                        <tr><td class="p-5 font-semibold text-white">Crédito a la Palabra</td><td class="p-5">Sec. Economía (Federal)</td><td class="p-5 text-green-400">$25,000 MXN</td><td class="p-5"><a href="https://www.gob.mx/se" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Jóvenes Construyendo el Futuro</td><td class="p-5">STPS (Nacional)</td><td class="p-5 text-green-400">Beca + Seguro</td><td class="p-5"><a href="https://jovenesconstruyendoelfuturo.stps.gob.mx/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Tandas para el Bienestar</td><td class="p-5">Bienestar (Federal)</td><td class="p-5 text-green-400">Préstamo 0%</td><td class="p-5"><a href="https://www.gob.mx/bienestar" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Capital Semilla Agro</td><td class="p-5">SADER (Federal)</td><td class="p-5 text-green-400">Fondo Perdido</td><td class="p-5"><a href="https://www.gob.mx/sader" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Producción para el Bienestar</td><td class="p-5">SADER</td><td class="p-5 text-green-400">Apoyo Directo</td><td class="p-5"><a href="https://www.gob.mx/produccionparaelbienestar" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Fondeo Startups Tech</td><td class="p-5">Nafin / Bancomext</td><td class="p-5 text-green-400">Crédito PYME</td><td class="p-5"><a href="https://www.nafin.com" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Mujer Exporta MX</td><td class="p-5">Sec. Economía</td><td class="p-5 text-green-400">Incentivo Comercio</td><td class="p-5"><a href="https://www.gob.mx/se" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Programa de Microcréditos</td><td class="p-5">PRONAFIM</td><td class="p-5 text-green-400">Financiamiento</td><td class="p-5"><a href="https://www.gob.mx/se" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Fondo Pyme Internacional</td><td class="p-5">Bancomext</td><td class="p-5 text-green-400">Línea de Crédito</td><td class="p-5"><a href="https://www.bancomext.com" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Estímulo Fiscal Artes</td><td class="p-5">SHCP / EFICARTES</td><td class="p-5 text-green-400">Deducibilidad</td><td class="p-5"><a href="https://www.gob.mx/cultura" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-
-                        <tr><td class="p-5 font-semibold text-white">Fondo de Innovación CDMX</td><td class="p-5">SEDECO CDMX</td><td class="p-5 text-green-400">Económico</td><td class="p-5"><a href="https://www.sedeco.cdmx.gob.mx/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
+                        <tr><td class="p-5 font-semibold text-white">Crédito a la Palabra</td><td class="p-5">Sec. Economía</td><td class="p-5 text-green-400">$25,000 MXN</td><td class="p-5"><a href="https://www.gob.mx/se" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
+                        <tr><td class="p-5 font-semibold text-white">Jóvenes Construyendo el Futuro</td><td class="p-5">STPS</td><td class="p-5 text-green-400">Beca Mensual</td><td class="p-5"><a href="https://jovenesconstruyendoelfuturo.stps.gob.mx/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
+                        <tr><td class="p-5 font-semibold text-white">Tandas para el Bienestar</td><td class="p-5">Bienestar</td><td class="p-5 text-green-400">Préstamo 0%</td><td class="p-5"><a href="https://www.gob.mx/bienestar" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
+                        <tr><td class="p-5 font-semibold text-white">Capital Semilla Agro</td><td class="p-5">SADER</td><td class="p-5 text-green-400">Fondo Perdido</td><td class="p-5"><a href="https://www.gob.mx/sader" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
+                        <tr><td class="p-5 font-semibold text-white">Fondo de Innovación CDMX</td><td class="p-5">SEDECO CDMX</td><td class="p-5 text-green-400">Apoyo Directo</td><td class="p-5"><a href="https://www.sedeco.cdmx.gob.mx/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
                         <tr><td class="p-5 font-semibold text-white">Impulso Nuevo León</td><td class="p-5">Gobierno NL</td><td class="p-5 text-green-400">Crédito 0%</td><td class="p-5"><a href="https://www.nl.gob.mx/economia" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
                         <tr><td class="p-5 font-semibold text-white">Beca Innovación Jalisco</td><td class="p-5">SICyT Jalisco</td><td class="p-5 text-green-400">Fondo Semilla</td><td class="p-5"><a href="https://sicyt.jalisco.gob.mx/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
                         <tr><td class="p-5 font-semibold text-white">Emprende Edomex</td><td class="p-5">SEDECO Edomex</td><td class="p-5 text-green-400">Microcrédito</td><td class="p-5"><a href="https://sedeco.edomex.gob.mx/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Crédito Impulso Yucatán</td><td class="p-5">SEFOET Yucatán</td><td class="p-5 text-green-400">Pyme Expansión</td><td class="p-5"><a href="https://sefoet.yucatan.gob.mx/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Hecho en Quintana Roo</td><td class="p-5">SEDE Q.Roo</td><td class="p-5 text-green-400">Marca e Incentivo</td><td class="p-5"><a href="https://qroo.gob.mx/sede" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Fondo Sonora</td><td class="p-5">Gobierno Sonora</td><td class="p-5 text-green-400">Empresarial</td><td class="p-5"><a href="https://fondosonora.gob.mx/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Fideicomiso Chihuahua</td><td class="p-5">FIDEAPECH Chih.</td><td class="p-5 text-green-400">Emprendedor</td><td class="p-5"><a href="https://fideapech.com/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Puro Sinaloa Emprende</td><td class="p-5">Secretaría Economía</td><td class="p-5 text-green-400">Equipamiento</td><td class="p-5"><a href="https://sinaloa.gob.mx/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Fondo Querétaro</td><td class="p-5">SEDESU Qro.</td><td class="p-5 text-green-400">Tecnología</td><td class="p-5"><a href="https://www.queretaro.gob.mx/sedesu" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Impulso Guanajuato</td><td class="p-5">Fondos Gto</td><td class="p-5 text-green-400">Crédito Social</td><td class="p-5"><a href="https://fondos.guanajuato.gob.mx/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Beca Coahuila Innova</td><td class="p-5">Sec. Economía Coah</td><td class="p-5 text-green-400">Digitalización</td><td class="p-5"><a href="https://www.secoahuila.gob.mx/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Mujeres Fuertes Edomex</td><td class="p-5">Gobierno Edomex</td><td class="p-5 text-green-400">Económico</td><td class="p-5"><a href="https://edomex.gob.mx/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Crédito Ágil Puebla</td><td class="p-5">SE Puebla</td><td class="p-5 text-green-400">Financiamiento</td><td class="p-5"><a href="https://se.puebla.gob.mx/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Fondo Baja California</td><td class="p-5">SEST BC</td><td class="p-5 text-green-400">Emprendimiento</td><td class="p-5"><a href="https://www.bajacalifornia.gob.mx/sest/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
-                        <tr><td class="p-5 font-semibold text-white">Artesanos de Michoacán</td><td class="p-5">IAM Michoacán</td><td class="p-5 text-green-400">Materia Prima</td><td class="p-5"><a href="https://iam.michoacan.gob.mx/" target="_blank" class="text-blue-4
+                        <tr><td class="p-5 font-semibold text-white">Crédito Joven (Nafin)</td><td class="p-5">Nacional Financiera</td><td class="p-5 text-green-400">Tasa Baja</td><td class="p-5"><a href="https://www.nafin.com" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
+                        <tr><td class="p-5 font-semibold text-white">Beca Santander Habilidades</td><td class="p-5">Santander</td><td class="p-5 text-green-400">100% Gratis</td><td class="p-5"><a href="https://www.becas-santander.com/" target="_blank" class="text-blue-400 hover:underline">Ver Info</a></td></tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto mt-20 space-y-16">
+            <h2 class="text-3xl font-bold text-center text-blue-400 mb-10">Guías Estratégicas para Emprendedores</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-3">1. Fondos perdidos en 2026</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Demuestra cómo tu proyecto generará empleos para asegurar el éxito en la solicitud.</p>
+                </article>
+                <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-3">2. Checklist SAT México</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Sin la Opinión de Cumplimiento positiva, los apoyos federales serán denegados.</p>
+                </article>
+                <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-3">3. Créditos NAFIN</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Busca el programa "Jóvenes Emprendedores" para tasas menores al 12% anual.</p>
+                </article>
+                <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-3">4. Becas Digitales</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Certificaciones de Google y Amazon son el motor para nuevos negocios digitales.</p>
+                </article>
+                <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-3">5. Fondos para Mujeres</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Programas como "Mujer Exporta MX" ofrecen periodos de gracia preferenciales.</p>
+                </article>
+                <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-3">6. ¿Fondo Perdido o Crédito?</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">El fondo perdido requiere comprobación estricta; el crédito da mayor libertad.</p>
+                </article>
+                <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-3">7. Licitaciones Públicas</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Regístrate en CompraNet para acceder a las compras masivas del gobierno.</p>
+                </article>
+                <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-3">8. Incentivos Agrotech</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">SADER abre ventanillas para tecnificación del campo en el primer trimestre.</p>
+                </article>
+                <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-3">9. Registro de Marca IMPI</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">El título de marca es garantía de profesionalismo ante cualquier fondo.</p>
+                </article>
+                <article class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-3">10. Pitch de Negocios</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Enfócate en el problema que resuelves y en la tracción de tu negocio.</p>
+                </article>
+            </div>
+        </div>
+
+        <footer class="mt-20 text-center text-slate-500 text-sm">
+            <p>&copy; 2026 Directorio de Ayudas México. Creado con IA.</p>
+        </footer>
+    </div>
+
+    <script>
+        function searchTable() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("aidTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 1; i < tr.length; i++) {
+                tr[i].style.display = "none";
+                td = tr[i].getElementsByTagName("td");
+                for (var j = 0; j < td.length; j++) {
+                    if (td[j]) {
+                        txtValue = td[j].textContent || td[j].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
