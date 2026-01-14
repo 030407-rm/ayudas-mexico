@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Ayudas Emprendedores México 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <div class="container mx-auto px-4 py-12">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-blue-400 mb-4">Directorio de Ayudas México 2026</h1>
+            <p class="text-gray-400">Encuentra fondos, becas y créditos para tu negocio en segundos.</p>
+        </header>
+
+        <div class="max-w-xl mx-auto mb-10">
+            <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Busca por palabra clave (ej. Mujer, Tecnología, Crédito)..." 
+            class="w-full p-4 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none text-white">
+        </div>
+
+        <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse" id="aidTable">
+                <thead>
+                    <tr class="border-b border-gray-700 bg-gray-800">
+                        <th class="p-4">Programa</th>
+                        <th class="p-4">Institución</th>
+                        <th class="p-4">Monto/Beneficio</th>
+                        <th class="p-4">Link</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr class="border-b border-gray-800 hover:bg-gray-800 transition">
+                        <td class="p-4">Capital Semilla Digital</td>
+                        <td class="p-4">Secretaría de Economía</td>
+                        <td class="p-4">Hasta $50,000 MXN</td>
+                        <td class="p-4"><a href="#" class="text-blue-400 font-bold">Ver Convocatoria</a></td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function searchTable() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("aidTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 1; i < tr.length; i++) {
+                tr[i].style.display = "none";
+                td = tr[i].getElementsByTagName("td");
+                for (var j = 0; j < td.length; j++) {
+                    if (td[j]) {
+                        txtValue = td[j].textContent || td[j].innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
